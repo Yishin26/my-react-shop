@@ -1,5 +1,6 @@
 import './App.css';
 import styled, { css } from 'styled-components';
+import Navbar from './components/Navbar';
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -12,15 +13,16 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Wrapper>
         <Title>
           Hello World!
-    </Title>
+        </Title>
       </Wrapper>
+
     </div>
   );
 }
