@@ -1,6 +1,7 @@
 import './App.css';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Navbar from './components/Navbar';
+import ProductList from './components/ProductList'
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -14,6 +15,7 @@ const Wrapper = styled.section`
 `;
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
@@ -22,7 +24,7 @@ function App() {
           Hello World!
         </Title>
       </Wrapper>
-
+      <ProductList/>
     </div>
   );
 }
