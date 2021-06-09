@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import styled from 'styled-components';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList'
@@ -14,19 +15,32 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-function App() {
+class App extends React.Component {
+  state = {
+    inputText: '',
+  }
+  setValue = inputText => {
+    this.setState({
+      inputText,
+    })
+    //console.log(this.state)
+  }
 
-  return (
-    <div className="App">
-      <Navbar />
-      <Wrapper>
-        <Title>
-          Hello World!
+
+  render() {
+    return (
+      <div className="App">
+        <Navbar setValue={this.setValue} />
+        <Wrapper>
+          <Title>
+            Hello World!
         </Title>
-      </Wrapper>
-      <ProductList/>
-    </div>
-  );
+        </Wrapper>
+        <ProductList value={this.state.inputText} />
+      </div>
+    );
+  }
+
 }
 
 export default App;
