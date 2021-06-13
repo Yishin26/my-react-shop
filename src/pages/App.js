@@ -1,8 +1,7 @@
-import './App.css';
 import React from 'react'
 import styled from 'styled-components';
-import Navbar from './components/Navbar';
-import ProductList from './components/ProductList'
+import Navbar from '../components/Navbar';
+import ProductList from '../components/ProductList'
 
 const Title = styled.h1`
   font-size: 1.5em;

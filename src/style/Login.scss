@@ -1,0 +1,30 @@
+.login{
+    position: relative;
+    .login-card{
+        //border: 1px solid black;
+        border-radius: 2px;
+        background-color: rgb(221, 238, 144);
+        padding: 20px;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:100px;
+        .input-field{
+            margin:10px;
+        }
+        a{
+            text-decoration: none;
+            .login-btn{
+            
+                cursor: pointer;
+                text-align: center;
+                background-color: #008321;
+                color: white;
+                border-radius: 2px;
+                padding:5px;
+                
+            }
+        }
+        
+    }
+}

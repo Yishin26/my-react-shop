@@ -17,9 +17,14 @@
     margin: 8px;
   }
   .user-name {
+    
     text-align: right;
     flex: 1;
     margin: 8px;
     color: white;
+    a{
+      text-decoration: none;
+      color: white;
+    }
   }
 }
